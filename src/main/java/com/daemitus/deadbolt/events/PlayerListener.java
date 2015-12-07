@@ -60,6 +60,7 @@ public class PlayerListener implements Listener {
             case CHEST:
             case TRAPPED_CHEST:
             case FURNACE:
+            case HOPPER:
             case CAULDRON:
             case DISPENSER:
             case BREWING_STAND:
@@ -82,6 +83,7 @@ public class PlayerListener implements Listener {
             case CHEST:
             case DISPENSER:
             case FURNACE:
+            case HOPPER:
             case BURNING_FURNACE:
             case WOODEN_DOOR:
             case IRON_DOOR_BLOCK:
@@ -175,6 +177,8 @@ public class PlayerListener implements Listener {
             case FURNACE:
             case BURNING_FURNACE:
                 return player.hasPermission(Perm.user_create_furnace);
+            case HOPPER:
+                return player.hasPermission(Perm.user_create_hopper);
             case WOODEN_DOOR:
             case SPRUCE_DOOR:
             case BIRCH_DOOR:

@@ -236,7 +236,7 @@ public class SignListener implements Listener {
                             }
                             break;
                         case HOPPER:
-                            if (!hopper && !(enchant = player.hasPermission(Perm.user_create_hopper))) {
+                            if (!hopper && !(hopper = player.hasPermission(Perm.user_create_hopper))) {
                                 return Result.DENY_BLOCK_PERM;
                             }
                             break;

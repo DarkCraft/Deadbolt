@@ -1,5 +1,6 @@
 package com.daemitus.deadbolt;
 
+import java.util.Collections;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -125,7 +126,7 @@ public class DeadboltCommandExecutor implements CommandExecutor {
     }
 
     private boolean fix(Player player) {
-        Block block = player.getTargetBlock(null, 100);
+        Block block = player.getTargetBlock(Collections.EMPTY_SET, 100);
         Deadbolted db = Deadbolt.get(block);
 
         if (db.isProtected()) {
@@ -166,7 +167,7 @@ public class DeadboltCommandExecutor implements CommandExecutor {
     }
 
     private boolean fixAll(Player player) {
-        Block block = player.getTargetBlock(null, 100);
+        Block block = player.getTargetBlock(Collections.EMPTY_SET, 100);
         Deadbolted db = Deadbolt.get(block);
 
         if (db.isProtected()) {

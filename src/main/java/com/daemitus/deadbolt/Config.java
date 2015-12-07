@@ -25,6 +25,8 @@ public class Config extends AnnotatedConfig {
     public int auto_expire_days = 0;
     @ConfigComment("Allows trapdoors to link with each other vertically")
     public boolean vertical_trapdoors = true;
+    @ConfigComment("Allows hoppers to act like chests, one signs for all connected blocks")
+    public boolean group_hoppers = true;
     @ConfigComment("Allows furnaces to act like chests, one sign for all connected blocks")
     public boolean group_furnaces = true;
     @ConfigComment("Allows dispensers to act like chests, one sign for all connected blocks")

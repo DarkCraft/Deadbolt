@@ -64,6 +64,9 @@ public class Deadbolted {
             case IRON_TRAPDOOR:
                 searchTrapDoor(block, true, Deadbolt.getConfig().vertical_trapdoors);
                 break;
+            case HOPPER:
+                searchSimpleBlock(block, Deadbolt.getConfig().group_hoppers, Deadbolt.getConfig().group_hoppers);
+                break;
             case DISPENSER:
                 searchSimpleBlock(block, Deadbolt.getConfig().group_dispensers, Deadbolt.getConfig().group_dispensers);
                 break;
